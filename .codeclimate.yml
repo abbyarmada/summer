@@ -1,15 +1,15 @@
 engines:
-  gofmt:
+  golint:
     enabled: true
-  golint: 
+  gofmt:
     enabled: true
   govet:
     enabled: true
 ratings:
   paths:
+  - app/**
+  - lib/**
   - "**.go"
 exclude_paths:
-- "vendor/"
-- "test/"
-- "config/
-- "db/"
+- spec/**/*
+- "**/vendor/**/*"
